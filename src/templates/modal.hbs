@@ -1,0 +1,99 @@
+{{!-- {{#each results}} --}}
+<div class="backdrop">
+  <div id="{{id}}" class="modal">
+    <button class="modal__close-btn" type="button">
+      <svg class="img modal__close-icon" width="30" height="30">
+        <use href="./images/sprite.svg#close" width="30" height="30"></use>
+      </svg>
+    </button>
+
+    <div class="modal__img-container">
+      <img class="img modal__img" src="https://www.themoviedb.org/t/p/w220_and_h330_face{{poster_path}}" width="396"
+        alt="{{title}}" />
+    </div>
+
+    <div class="modal__content-container">
+      <h2 class="modal__title">{{title}}</h2>
+      <ul class="list modal__list">
+        <li class="modal__item">
+          <h3 class="modal__subtitle">Vote / Votes</h3>
+          <span class="modal__number">
+            <span class="modal__number--orange">{{vote_average}}</span> /
+            <span class="modal__number--gray">{{vote_count}}</span>
+          </span>
+        </li>
+        <li class="modal__item">
+          <h3 class="modal__subtitle">Popularity</h3>
+          <span class="modal__number">{{popularity}}</span>
+        </li>
+        <li class="modal__item">
+          <h3 class="modal__subtitle">Original Title</h3>
+          <span class="modal__text modal__text--uppercase">{{original_title}}</span>
+        </li>
+        <li class="modal__item">
+          <h3 class="modal__subtitle">Genre</h3{{#each genres}} <span class="modal__text">{{this.name}},&nbsp;</span>
+            {{/each}}
+        </li>
+      </ul>
+
+      <h3 class="modal__description-title">About</h3>
+      <p class="modal__description-text">{{overview}}</p>
+
+      <div class="modal__button-container">
+        <button class="button modal__button modal__button--watched" type="button">Add to wathed</button>
+        <button class="button modal__button modal__button--queue" type="button">Add to queue</button>
+      </div>
+    </div>
+  </div>
+</div>
+{{!-- {{/each}} --}}
+
+{{!-- {{#each this}}
+<div class="backdrop">
+  <div class="modal">
+    <button class="modal__close-btn" type="button">
+      <svg class="modal__close-icon">
+        <use href="./images/sprite.svg#close"></use>
+      </svg>
+    </button>
+
+    <div class="modal__img-container">
+      <img class="img" src="{{url}}" alt="{{alt}}" />
+    </div>
+
+    <div class="modal__content-container">
+      <h2 class="modal__title">{{title}}</h2>
+      <ul class="modal__list">
+        <li class="modal__item">
+          <h3 class="modal__subtitle">Vote / Votes</h3>
+          <span class="modal__number">{{rating}} / <span class="modal__number--black-gray">{{voteCount}}</span></span>
+        </li>
+        <li class="modal__item">
+          <h3 class="modal__subtitle--popularity">Popularity</h3>
+          <span class="modal__number">{{popularity}}</span>
+        </li>
+        <li class="modal__item">
+          <h3 class="modal__subtitle--original">Original Title</h3>
+          <span class="modal__text modal__text--uppercase">{{originalTitle}}</span>
+        </li>
+        <li class="modal__item">
+          <h3 class="modal__subtitle--original">Genre</h3>
+          <span class="modal__text">
+            {{#each this.genres}}
+            <span>{{name}}</span>
+            {{/each}}
+          </span>
+        </li>
+      </ul>
+
+      <h3 class="modal__description-title">About</h3>
+      <p class="modal__description-text">{{description}}</p>
+
+      <div class="modal__button-container">
+        <button class="button modal__button" type="button">Add to wathed</button>
+        <button class="button modal__button" type="button">Add to queue</button>
+      </div>
+    </div>
+  </div>
+</div>
+{{/each}} --}}

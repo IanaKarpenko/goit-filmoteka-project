@@ -1,0 +1,83 @@
+/* ========== Pagination ========== */
+.pagination__list{  
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.pagination__item{ 
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 500;  
+  color: $text-white-theme-color;
+  cursor: pointer;
+  transition: all 0.3s ease;    
+}
+
+.numb {
+  margin: 0 2px;    
+}
+
+.dots {
+    display: none;      
+}
+
+.arrow-btn {  
+    height: 40px;
+    width: 40px;
+    border: 0;
+    border-radius: 5px;
+    background: #F7F7F7;    
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.arrow-btn:hover {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.pagination__item.active,
+.pagination__item.numb:hover {
+    color: $text-dark-theme-color;
+    background: $accent-color;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.pagination__button-left {
+    background-image: url(../images/arrow-left.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}  
+
+.pagination__button-right {  
+    background-image: url(../images/arrow-right.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media screen and (max-width: 767px) {
+  .first, .last {
+    display: none;
+    }
+}
+      
+@media screen and (min-width: 768px){
+  .dots { 
+    display: flex;
+    justify-content: center; 
+    line-height: 40px;         
+    font-weight: 500;
+    font-size: 12px;
+    cursor: default;   
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+/* ========== End Pagination ========== */

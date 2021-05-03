@@ -1,0 +1,47 @@
+/* ========== Footer ========== */
+.footer__container {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #F7F7F7;
+}
+
+.footer__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.188em;
+  color: #545454;
+}
+
+.footer__text--underline {
+  text-decoration-line: underline;
+}
+
+.footer__icon {
+  margin: 0 6px;
+}
+
+@media screen and (max-width:767px) {
+  .footer__text--block {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+ .footer__text {
+    font-size: 16px;
+    line-height: 1.188em;
+ }
+}
+
+.footer__students {
+  text-decoration: none;
+  color: gray;
+}
+
+.footer__students:hover {
+  text-decoration: underline;
+  color: orange;
+}
+/* ========== End Footer ========== */

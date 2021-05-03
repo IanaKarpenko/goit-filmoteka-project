@@ -1,0 +1,25 @@
+/* ========== Logo ========== */
+.logo {
+  &__text {
+    visibility: hidden;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &__text {
+      visibility: visible;
+      margin-left: 10px;
+      font-weight: 500;
+      font-size: 29px;
+      line-height: 1.172em;
+      color: #ffffff;
+    }
+  }
+}
+
+/* ========== End Logo ========== */

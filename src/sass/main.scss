@@ -1,0 +1,19 @@
+@import './utils/variables';
+@import './utils/visually-hidden';
+@import './utils/mixins';
+
+@import './base/common';
+@import './base/section';
+@import './base/container';
+
+@import "./components/logo";
+@import "./components/button";
+@import "./components/modal";
+@import "./components/footer-modal";
+@import "./components/pagination";
+@import './components/spinner';
+
+@import "./layout/header";
+@import "./layout/movies";
+@import "./layout/footer";
+

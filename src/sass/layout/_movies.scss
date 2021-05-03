@@ -1,0 +1,71 @@
+/* ============ Movies ============ */
+.movies__list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+.movies__card {
+  margin-bottom: 20px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.movies__thumb {
+  height: 398px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.movies__img {
+  width: 100%;
+  object-position: center;
+}
+.movies__content {
+    height: 32px;
+}
+.movies__title {
+  font: inherit;
+  text-transform: uppercase;
+}
+.movies__description {
+  color: $accent-color;
+}
+.movies__rating {
+  display: inline-block;
+  text-align: center;
+  width: 36px;
+  margin-left: 10px;
+  border-radius: 5px;
+  background-color: $accent-color;
+  color: $text-dark-theme-color;
+}
+@media screen and (min-width: 768px) {
+  .movies__list{
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: 50px;
+  }
+  .movies__card{
+    width: calc((100% - 4 * 15px) / 2);
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  .movies__card{
+    width: calc((100% - 6 * 15px) / 3);
+    &:nth-last-child(-n + 3) {
+      margin-bottom: 0;
+    }
+  }
+}
+/* ========== End Movies ========== */

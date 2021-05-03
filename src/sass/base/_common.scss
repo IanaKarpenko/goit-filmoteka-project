@@ -1,0 +1,34 @@
+/* ========== Common ========== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: $main-font;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 1.4;
+  
+}
+
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ========== End Common ========== */

@@ -1,0 +1,14 @@
+{{#each this}}
+<li id="{{id}}" class="movies__card">
+  <div class="movies__thumb">
+    <img class="img movies__img" src="{{imgSrc}}" alt="Постер фильма">
+  </div>
+  <div class="movies__content">
+    <h2 class="movies__title">{{title}}</h2>
+    <p class="movies__description">
+      {{genre}} | {{releaseYear}}
+      <span class="movies__rating">{{rating}}</span>
+    </p>
+  </div>
+</li>
+{{/each}}
